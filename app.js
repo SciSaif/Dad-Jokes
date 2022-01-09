@@ -24,7 +24,13 @@ const colors = [
      "dark-primary": "#1d3557",
      "tertiary" : "#a8dadc", 
      "secondary" : "#f1faee",
-     "dark-secondary" : "#e63946"}];
+     "dark-secondary" : "#e63946"},
+
+     {"primary" :"#6a040f",
+     "dark-primary": "#03071e",
+     "tertiary" : "#d00000", 
+     "secondary" : "#ffba08",
+     "dark-secondary" : "#e85d04"}];
 
 const switchTheme  = (theme) => {
     root.style.setProperty('--primary', colors[theme].primary);
@@ -122,7 +128,7 @@ secondPage.addEventListener('click', ()=> {
         typeSelectBox.classList.add('hidden');
         secondPage.innerHTML = page;
         page = "Chuck Norris Jokes";
-        switchTheme(0);
+        switchTheme(2);
     }
     displayJoke();
     
@@ -152,7 +158,7 @@ thirdPage.addEventListener('click', ()=> {
         typeSelectBox.classList.add('hidden');
         thirdPage.innerHTML = page;
         page = "Chuck Norris Jokes";
-        switchTheme(0);
+        switchTheme(2);
     }
     displayJoke();
     
