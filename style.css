@@ -6,7 +6,7 @@
     --dark-orange: #e76f51;
 }
 
-body{
+body {
     background-color: var(--dark-green);
     box-sizing: border-box;
     padding: 0;
@@ -20,10 +20,6 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-
-}
-
-.header-main{
     font-size: 4rem;
 }
 
@@ -50,19 +46,18 @@ header {
     color: white;
 }
 
-
 section {
     background-color: var(--green);
-    height: 80vh;
+    height: 75vh;
     border-radius: 20vw 20vw 0 0;
     display: flex;
     justify-content: center;
 }
 
-.main{
+.main {
     margin-top: 50px;
     color: white;
-    max-width: 70%; 
+    max-width: 70%;
     text-align: center;
 }
 
@@ -81,12 +76,12 @@ blockquote {
     cursor: pointer;
 }
 
-#btn:hover  {
+#btn:hover {
     background-color: var(--orange)
 }
 
 @media only screen and (max-width: 500px) {
-    .header-main{
+    .header-main {
         font-size: 3rem;
     }
     #D {
@@ -95,15 +90,16 @@ blockquote {
     #scisaif {
         font-size: 0.8rem;
     }
-
-    .main{
+    .main {
         max-width: 98%;
     }
-  }
+}
 
-  /* Loader */
- .loader-active {
-    border: 4px solid #f3f3f3; 
+
+/* Loader */
+
+.loader-active {
+    border: 4px solid #f3f3f3;
     border-top: 4px solid var(--dark-orange);
     border-radius: 50%;
     width: 15px;
@@ -111,9 +107,37 @@ blockquote {
     animation: spin 2s linear infinite;
     margin: auto;
     margin-top: 20px;
-  }
+}
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer-main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.huck {
+    font-size: 2rem;
+}
+
+.footer-main p {
+    font-weight: 300;
+    cursor: pointer;
+}
+
