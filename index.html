@@ -16,16 +16,31 @@
 <body>
 
     <header>
-        <div class="header-main">
-            <p><span id="D">D</span><span id="ad-jokes">ad Jokes</span><sub><a href="https://github.com/SciSaif" id="scisaif">  By SciSaif</a></sub></p>
+        <div class="dad-jokes hidden">
+            <p><span class="Letter">D</span><span class="rest">ad Jokes</span><sub><a href="https://github.com/SciSaif" class="scisaif">  By SciSaif</a></sub></p>
         </div>
-        <div class="header-main2 hidden">
-            <p><span id="D">C</span><span class="huck" id="ad-jokes">huck Norris Jokes</span><sub><a href="https://github.com/SciSaif" id="scisaif">  By SciSaif</a></sub></p>
+        <div class="chuck-norris hidden">
+            <p><span class="Letter">C</span><span class="rest">huck Norris Jokes</span><sub><a href="https://github.com/SciSaif" class="scisaif">  By SciSaif</a></sub></p>
         </div>
+        <div class="joke-arena">
+            <p><span class="Letter">J</span><span class="rest">oke Arena</span><sub><a href="https://github.com/SciSaif" class="scisaif">  By SciSaif</a></sub></p>
+        </div>
+
 
     </header>
     <section>
         <div class="main">
+            <div class="type-select-box">
+
+                <label for="type">Category:</label>
+                <select name="type" id="type">
+                    <option value="Any">Any</option>
+                    <option value="Misc">Misc</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Pun">Pun</option>
+                </select>
+            </div>
             <blockquote id="joke">...</blockquote>
             <button id="btn">Get Another Joke</button>
             <div class="loader loader-active"></div>
@@ -33,7 +48,9 @@
     </section>
     <footer>
         <div class="footer-main">
-            <p class="switch-Page">Chuck Norris Jokes</p>
+            <p>More: </p>
+            <div class="second-page">Dad Jokes</div>
+            <div class="third-page">Chuck Norris Jokes</div>
         </div>
     </footer>
 
