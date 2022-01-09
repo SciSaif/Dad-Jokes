@@ -1,0 +1,102 @@
+:root {
+    --green: #2a9d8f;
+    --dark-green: #264653;
+    --yellow: #e9c46a;
+    --orange: #f4a261;
+    --dark-orange: #e76f51;
+}
+
+body{
+    background-color: var(--dark-green);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.header-main{
+    font-size: 4rem;
+}
+
+.header-main p {
+    position: relative;
+}
+
+#D {
+    display: inline-block;
+    color: var(--dark-orange);
+    transform: rotate(-10deg) translateY(15px);
+    -webkit-transform: rotate(-10deg) translateY(15px);
+    font-size: 7rem;
+}
+
+#ad-jokes {
+    text-decoration-line: underline;
+    text-decoration-color: var(--dark-orange);
+}
+
+#scisaif {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+section {
+    background-color: var(--green);
+    height: 80vh;
+    border-radius: 20vw 20vw 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    margin-top: 50px;
+    color: white;
+    max-width: 70%; 
+    text-align: center;
+}
+
+blockquote {
+    font-size: 2rem;
+}
+
+#btn {
+    color: white;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--dark-orange);
+    box-shadow: 1px 1px var(--dark-green);
+    border: none;
+    cursor: pointer;
+}
+
+#btn:hover  {
+    background-color: var(--orange)
+}
+
+@media only screen and (max-width: 500px) {
+    .header-main{
+        font-size: 3rem;
+    }
+    #D {
+        font-size: 5rem;
+    }
+    #scisaif {
+        font-size: 0.8rem;
+    }
+
+    .main{
+        max-width: 98%;
+    }
+  }
