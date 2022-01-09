@@ -111,6 +111,7 @@ secondPage.addEventListener('click', ()=> {
         jokeArena.classList.add('hidden');
         typeSelectBox.classList.add('hidden');
         secondPage.innerHTML = page;
+        document.title = "Dad Jokes";
         page = "Dad Jokes";
         switchTheme(1);
     }else if(secondPage.innerHTML == "Joke Arena"){
@@ -119,6 +120,7 @@ secondPage.addEventListener('click', ()=> {
         jokeArena.classList.remove('hidden');
         typeSelectBox.classList.remove('hidden');
         secondPage.innerHTML = page;
+        document.title = "Joke Arena";
         page = "Joke Arena";
         switchTheme(0);
     }else {
@@ -127,6 +129,7 @@ secondPage.addEventListener('click', ()=> {
         jokeArena.classList.add('hidden');
         typeSelectBox.classList.add('hidden');
         secondPage.innerHTML = page;
+        document.title = "Chuck Norris Jokes";
         page = "Chuck Norris Jokes";
         switchTheme(2);
     }
@@ -141,6 +144,7 @@ thirdPage.addEventListener('click', ()=> {
         jokeArena.classList.add('hidden');
         typeSelectBox.classList.add('hidden');
         thirdPage.innerHTML = page;
+        document.title = "Dad Jokes";
         page = "Dad Jokes";
         switchTheme(1);
     }else if(thirdPage.innerHTML == "Joke Arena"){
@@ -148,6 +152,7 @@ thirdPage.addEventListener('click', ()=> {
         chuckNorris.classList.add('hidden');
         jokeArena.classList.remove('hidden');
         typeSelectBox.classList.remove('hidden');
+        document.title = "Joke Arena";
         thirdPage.innerHTML = page;
         page = "Joke Arena";
         switchTheme(0);
@@ -156,6 +161,7 @@ thirdPage.addEventListener('click', ()=> {
         chuckNorris.classList.remove('hidden');
         jokeArena.classList.add('hidden');
         typeSelectBox.classList.add('hidden');
+        document.title = "Chuck Norris Jokes";
         thirdPage.innerHTML = page;
         page = "Chuck Norris Jokes";
         switchTheme(2);
