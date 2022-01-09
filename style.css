@@ -48,7 +48,7 @@ header {
 
 section {
     background-color: var(--green);
-    height: 75vh;
+    min-height: 75vh;
     border-radius: 20vw 20vw 0 0;
     display: flex;
     justify-content: center;
@@ -74,10 +74,12 @@ blockquote {
     box-shadow: 1px 1px var(--dark-green);
     border: none;
     cursor: pointer;
+    margin-bottom: 25px;
 }
 
 #btn:hover {
     background-color: var(--orange)
+
 }
 
 @media only screen and (max-width: 500px) {
